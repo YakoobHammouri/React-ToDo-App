@@ -1,0 +1,167 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+.App {
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 25px;
+  max-width: 100%;
+  margin-top: 60px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.task-check {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.task-text {
+  flex: 0 0 auto;
+  width: 400px;
+  max-width: none;
+  word-wrap: break-word;
+}
+
+.task-btn {
+  flex: 0 0 22.333333%;
+  max-width: 22.333333%;
+  display: flex;
+}
+.task-list {
+  max-width: 70%;
+  min-width: 35%;
+  width: 600px;
+  border: 1px solid #c1c4c7;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #edeeee;
+}
+
+.task-list ul {
+  list-style: none;
+}
+
+.task-list ul li {
+  padding: 15px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.task-list ul li:last-child {
+  border-bottom: none;
+}
+
+.task-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 0 6px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+.btn-red {
+  color: #ffffff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-red:hover {
+  color: #dc3545;
+  background-color: #fff;
+}
+
+.btn-blue {
+  color: #ffffff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-blue:hover {
+  color: #007bff;
+  background-color: #fff;
+}
+
+.btn-green {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-green:hover {
+  color: #28a745;
+  background-color: #fff;
+}
+
+.form-control {
+  display: flex;
+  margin: 25px;
+}
+
+.input-control {
+  width: 100%;
+  height: 34px;
+  padding: 2px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.input-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+li.active-edit label {
+  display: none !important;
+}
+
+li.active-edit input[type='text'] {
+  display: block !important;
+  width: 90%;
+}
+
+li.active-edit button[action='save'] {
+  display: block !important;
+}
+
+li.active-edit button[action='edit'] {
+  display: none !important;
+}
